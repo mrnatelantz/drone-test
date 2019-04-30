@@ -1,0 +1,13 @@
+kind: pipeline
+name: default
+
+steps:
+  - name: deps
+    image: node:10-slim
+    commands:
+      - npm i
+
+  - name:
+    image: node:10-slim
+    commands:
+      - npx test
