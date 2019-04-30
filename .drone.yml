@@ -2,12 +2,8 @@ kind: pipeline
 name: default
 
 steps:
-  - name: deps
+  - name: test
     image: node:10
     commands:
       - npm i
-
-  - name:
-    image: node:10
-    commands:
       - npm run test
