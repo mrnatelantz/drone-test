@@ -3,11 +3,11 @@ name: default
 
 steps:
   - name: deps
-    image: node:10-slim
+    image: node:10
     commands:
       - npm i
 
   - name:
-    image: node:10-slim
+    image: node:10
     commands:
-      - npx test
+      - npm run test
